@@ -24,7 +24,7 @@ export default function TeamPage() {
           <div className="stack">
             <p className="label">קטגוריה</p>
             <h1 className="value">{state.categoryName}</h1>
-            <p className="label">מספר מילים</p>
+            <p className="label count-label">מספר מילים</p>
             <p className="value">{state.wordCount}</p>
           </div>
         ) : (

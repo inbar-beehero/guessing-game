@@ -40,7 +40,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
-  max-width: min(92vw, 18em);
+  max-width: 94vw;
 }
 
 .term,
@@ -57,6 +57,10 @@ a {
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.count-label {
+  margin-top: 3.25rem;
 }
 
 .notice,
