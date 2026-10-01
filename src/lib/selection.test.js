@@ -33,6 +33,7 @@ describe("pickRandomUnused", () => {
     expect(new Set(termsData.categories.map((category) => category.color)).size).toBe(5);
     for (const text of texts) {
       expect(text).toMatch(/[\u0590-\u05FF]/);
+      expect(countWords(text)).toBeGreaterThanOrEqual(2);
     }
   });
 
