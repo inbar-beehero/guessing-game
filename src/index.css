@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", "Arial Hebrew", "David", sans-serif;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem 1rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: min(92vw, 18em);
+}
+
+.term,
+.value {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(2.6rem, 7vw, 6.5rem);
+  text-wrap: balance;
+}
+
+.label {
+  margin: 1.25rem 0 0;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.notice,
+.status {
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 2.5rem;
+}
+
+.next {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  padding: 0.55rem 2.8rem;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+}
+
+.next:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.home-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+}
+
+.home p {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  max-width: 22em;
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home a {
+  text-decoration: none;
+  background: #ffffff;
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+}
